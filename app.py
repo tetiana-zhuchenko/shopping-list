@@ -8,7 +8,6 @@ def first_page():  # put application's code here
     return render_template('index.html')
 
 
-
 @app.route('/world')
 def hello_world():  # put application's code here
     return 'Hello World! For everybody!'
@@ -23,9 +22,17 @@ def news():  # put application's code here
 def blue():  # put application's code here
     return render_template('blue.html')
 
+
 @app.route('/yellow')
 def yellow():  # put application's code here
     return render_template('yellow.html')
+
+
+@app.route('/green')
+def green():  # put application's code here
+    background_color = 'green'
+    cool_news = 'dhsajgfjflsaffgajshgfjlasfgsljgflsjagfljasgflsagdflgsafgsljdfgsajlfgajlsf'
+    return render_template('multicolor.html', background_color=background_color, news=cool_news)
 
 
 if __name__ == '__main__':
