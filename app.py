@@ -3,10 +3,22 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 
-@app.route('/<name>')
-def first_page(name):  # put application's code here
-    return name
-    # return render_template('index.html')
+@app.route('/<color>')
+def first_page(color):
+    background_color = str(color)
+    page_title = str.capitalize(color)
+    news_color = str.capitalize(color)
+    return render_template('multicolor.html', background_color=background_color, page_title=page_title,
+                           news_color=news_color)
+
+
+""" def green():  # put application's code here
+     background_color = 'green'
+     return render_template('multicolor.html', page_title=page_title, background_color=background_color,
+                            news=cool_news)
+
+
+# return render_template('index.html')
 
 
 @app.route('/world')
@@ -44,8 +56,7 @@ def purple():  # put application's code here
     page_title = 'Purple'
     cool_news = 'I\'ve got it!'
     return render_template('multicolor.html', page_title=page_title, background_color=background_color,
-                           news=cool_news)
-
+                           news=cool_news)"""
 
 if __name__ == '__main__':
     app.run()
