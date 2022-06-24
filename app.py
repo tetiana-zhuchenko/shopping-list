@@ -31,8 +31,19 @@ def yellow():  # put application's code here
 @app.route('/green')
 def green():  # put application's code here
     background_color = 'green'
+    page_title = 'Green'
     cool_news = 'dhsajgfjflsaffgajshgfjlasfgsljgflsjagfljasgflsagdflgsafgsljdfgsajlfgajlsf'
-    return render_template('multicolor.html', background_color=background_color, news=cool_news)
+    return render_template('multicolor.html', page_title=page_title, background_color=background_color,
+                           news=cool_news)
+
+
+@app.route('/purple')
+def purple():  # put application's code here
+    background_color = 'purple'
+    page_title = 'Purple'
+    cool_news = 'I\'ve got it!'
+    return render_template('multicolor.html', page_title=page_title, background_color=background_color,
+                           news=cool_news)
 
 
 if __name__ == '__main__':
