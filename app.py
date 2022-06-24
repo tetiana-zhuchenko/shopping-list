@@ -3,9 +3,10 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 
-@app.route('/')
-def first_page():  # put application's code here
-    return render_template('index.html')
+@app.route('/<name>')
+def first_page(name):  # put application's code here
+    return name
+    # return render_template('index.html')
 
 
 @app.route('/world')
