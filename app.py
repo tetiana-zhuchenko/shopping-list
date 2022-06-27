@@ -5,11 +5,15 @@ app = Flask(__name__)
 
 @app.route('/<color>')
 def first_page(color):
-    background_color = str(color)
-    page_title = str.capitalize(color)
-    news_color = str.capitalize(color)
+    # print('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>')
+    color_list = ['red', 'orange', 'yellow', 'green', 'lightblue', 'blue', 'magenta']
+
+    background_color = color
+    page_title = background_color.capitalize()
+    news_color = background_color.capitalize()
+
     return render_template('multicolor.html', background_color=background_color, page_title=page_title,
-                           news_color=news_color)
+                           news_color=news_color, color_list=color_list)
 
 
 """ def green():  # put application's code here
