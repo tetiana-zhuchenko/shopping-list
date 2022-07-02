@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>{{ page_title }}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='my_style.css') }}">
 </head>
 <body style="background: {{ background_color }}">
 
@@ -11,7 +12,7 @@
 <h3> P.s. Taras, thanks a lot for your help. I owe you one </h3>
 
 {% for color in color_list %}
-    <p style="background: {{ color }}; border: 2mm ridge rgba(211, 220, 50, .6)"> {{ color }}</p>
+    <p style="background: {{ color }}; border: 2px dotted rgba(211, 220, 50, .8)"> {{ color }}</p>
 {% endfor %}
 
 
