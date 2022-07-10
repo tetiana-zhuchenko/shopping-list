@@ -1,3 +1,7 @@
+# export FLASK_ENV=development
+# export FLASK_APP=app.py
+# flask run --port=5002
+
 from flask import Flask, render_template
 
 app = Flask(__name__)
@@ -6,7 +10,7 @@ app = Flask(__name__)
 @app.route('/<color>')
 def first_page(color):
     # print('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>')
-    color_list = ['red', 'orange', 'yellow', 'green', 'lightblue', 'blue', 'magenta']
+    color_list = ['red', 'orange', 'yellow', 'green', 'lightblue', 'blue', 'magenta', 'black', 'white']
 
     background_color = color
     page_title = background_color.capitalize()
