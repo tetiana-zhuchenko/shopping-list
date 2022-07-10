@@ -1,6 +1,8 @@
 # export FLASK_ENV=development
 # export FLASK_APP=app.py
-# flask run --port=5002
+# flask run
+# [--port=5002]
+# *(port optional)
 
 # To make a bar with: background color: magenta, dimensions 100x250 pixels,
 # with centered text inside it "Centered Text !!!" using css class (at least 2 classes You need)
