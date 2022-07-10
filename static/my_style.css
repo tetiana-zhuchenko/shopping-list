@@ -1,0 +1,21 @@
+.pink-bar {
+    background-color: deeppink;
+    width: 400px;
+    height: 300px;
+}
+
+p.blue-text {
+    background-color: dodgerblue;
+    border-style: dotted;
+    border-width: 3px;
+}
+
+h1.blue-text {
+    background-color: dodgerblue;
+    border-style: solid;
+    border-width: 3px;
+}
+
+h1.dimmer {
+    background-color: darkslategray;
+}

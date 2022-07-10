@@ -2,6 +2,9 @@
 # export FLASK_APP=app.py
 # flask run --port=5002
 
+# To make a bar with: background color: magenta, dimensions 100x250 pixels,
+# with centered text inside it "Centered Text !!!" using css class (at least 2 classes You need)
+
 from flask import Flask, render_template
 
 app = Flask(__name__)
@@ -19,52 +22,6 @@ def first_page(color):
     return render_template('multicolor.html', background_color=background_color, page_title=page_title,
                            news_color=news_color, color_list=color_list)
 
-
-""" def green():  # put application's code here
-     background_color = 'green'
-     return render_template('multicolor.html', page_title=page_title, background_color=background_color,
-                            news=cool_news)
-
-
-# return render_template('index.html')
-
-
-@app.route('/world')
-def hello_world():  # put application's code here
-    return 'Hello World! For everybody!'
-
-
-@app.route('/news')
-def news():  # put application's code here
-    return 'I\'ve got Jetbrains license'
-
-
-@app.route('/blue')
-def blue():  # put application's code here
-    return render_template('blue.html')
-
-
-@app.route('/yellow')
-def yellow():  # put application's code here
-    return render_template('yellow.html')
-
-
-@app.route('/green')
-def green():  # put application's code here
-    background_color = 'green'
-    page_title = 'Green'
-    cool_news = 'dhsajgfjflsaffgajshgfjlasfgsljgflsjagfljasgflsagdflgsafgsljdfgsajlfgajlsf'
-    return render_template('multicolor.html', page_title=page_title, background_color=background_color,
-                           news=cool_news)
-
-
-@app.route('/purple')
-def purple():  # put application's code here
-    background_color = 'purple'
-    page_title = 'Purple'
-    cool_news = 'I\'ve got it!'
-    return render_template('multicolor.html', page_title=page_title, background_color=background_color,
-                           news=cool_news)"""
 
 if __name__ == '__main__':
     app.run()
