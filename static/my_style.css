@@ -43,3 +43,25 @@ p.centred-text {
     height: 250px;
     padding-top: 4%;
 }
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+.flex-item {
+    background: magenta;
+    color: white;
+    padding: 5px;
+    width: 100px;
+    height: 250px;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 150px;
+    font-size: 3em;
+}
