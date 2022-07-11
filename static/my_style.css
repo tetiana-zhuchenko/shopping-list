@@ -1,3 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, serif;
+    box-sizing: border-box;
+    /*border-width: 1px;*/
+    /*border-color: Blue;*/
+    /*border-style: dotted;*/
+}
+
+
 .pink-bar {
     background-color: deeppink;
     width: 400px;
@@ -35,33 +46,33 @@ p.centred-text {
     padding-right: 10%;
     padding-bottom: 80%;*/
 }
+
 .magenta-bar-v-2 {
     background-color: magenta;
     color: white;
     text-align: center;
     width: 100px;
     height: 250px;
-    padding-top: 4%;
+    padding-top: 10%;
 }
 
 .flex-container {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+    /*flex-flow: row wrap;*/
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     padding: 0;
     margin: 0;
+    background: magenta;
+    width: 50%;
+    height: 250px;
     list-style: none;
 }
 
-
 .flex-item {
-    background: magenta;
-    color: white;
-    padding: 5px;
-    width: 100px;
-    height: 250px;
-    text-align: center;
-    margin-top: 10px;
-    line-height: 150px;
-    font-size: 3em;
+    background-color: darkblue;
+    color: azure;
+    padding: 5px 5px 5px 15px;
+    font-size: 24px;
 }
