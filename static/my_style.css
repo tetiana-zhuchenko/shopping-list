@@ -19,3 +19,27 @@ h1.blue-text {
 h1.dimmer {
     background-color: darkslategray;
 }
+
+.magenta-bar {
+    background-color: magenta;
+    width: 100px;
+    height: 250px;
+}
+
+p.centred-text {
+    color: darkmagenta;
+    text-align: center;
+    padding: 70% 10%;
+    /*padding-top: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 80%;*/
+}
+.magenta-bar-v-2 {
+    background-color: magenta;
+    color: white;
+    text-align: center;
+    width: 100px;
+    height: 250px;
+    padding-top: 4%;
+}
