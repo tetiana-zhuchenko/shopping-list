@@ -35,12 +35,15 @@ h1.dimmer {
     background-color: magenta;
     width: 100px;
     height: 250px;
+    display: inline-table;
 }
 
 p.centred-text {
     color: darkmagenta;
     text-align: center;
-    padding: 70% 10%;
+    vertical-align: middle;
+    display: table-cell;
+    /*padding: 70% 10%;*/
     /*padding-top: 80%;
     padding-left: 10%;
     padding-right: 10%;
@@ -51,9 +54,10 @@ p.centred-text {
     background-color: magenta;
     color: white;
     text-align: center;
+    vertical-align: middle;
     width: 100px;
     height: 250px;
-    padding-top: 10%;
+
 }
 
 .flex-container {
